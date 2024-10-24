@@ -59,3 +59,40 @@ footer {
   font-weight: 400;
   margin-bottom: 10px;
 }
+
+.album {
+  height: 220px;
+  width: 150px;
+  background-color: lightsteelblue;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.album-cover {
+  width: 70%;
+}
+.album-title {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.album-artist {
+  font-size: 0.8em;
+  font-weight: 400;
+  font-style: normal;
+}
+.album-price {
+  font-size: 0.7em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#section-recomended {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
