@@ -44,3 +44,15 @@ const albumes = [
     disponible: true,
   },
 ];
+const albumesActualizados = localStorage.getItem("albumes");
+const albumesActualizadosJSON = JSON.parse(albumesActualizados);
+
+if (albumesActualizados === null) {
+  const albumesJSON = JSON.stringify(albumes);
+  localStorage.setItem("albumes", albumesJSON);
+} else {
+  console.log("Ya tenes una bd en localStorage");
+}
+
+console.log(albumesActualizados);
+console.log(albumesActualizadosJSON);
