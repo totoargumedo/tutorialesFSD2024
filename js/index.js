@@ -32,5 +32,5 @@ function mostrarAlbumRecomendado(album) {
 // mostrarAlbumRecomendado(albumes[2]);
 
 for (let i = 0; i < 3; i++) {
-  mostrarAlbumRecomendado(albumes[i]);
+  mostrarAlbumRecomendado(albumesActualizados[i]);
 }
