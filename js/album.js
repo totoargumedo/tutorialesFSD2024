@@ -1,3 +1,12 @@
+const parametros = new URLSearchParams(document.location.search);
+const albumTitulo = parametros.get("titulo");
+
+for (let i = 0; i < albumesActualizados.length; i++) {
+  if (albumesActualizados[i].titulo === albumTitulo) {
+    renderizarAlbumes(albumesActualizados[i]);
+  }
+}
+
 function renderizarAlbumes(album) {
   const contenedorAlbum = document.createElement("div");
   contenedorAlbum.classList.add("gallery-album");
@@ -45,16 +54,6 @@ function renderizarAlbumes(album) {
   generoAlbum.innerText = album.genero;
   contenedorAlbumData.appendChild(generoAlbum);
 
-  const botonMas = document.createElement("a");
-  botonMas.classList.add("gallery-album-button");
-  botonMas.innerText = "Ver más";
-  botonMas.href = "album.html?titulo=" + album.titulo;
-  contenedorAlbumBody2.appendChild(botonMas);
-
-  const contenedorGaleria = document.getElementById("section-gallery");
+  const contenedorGaleria = document.getElementById("section-album");
   contenedorGaleria.appendChild(contenedorAlbum);
-}
-
-for (let i = 0; i < albumesActualizados.length; i++) {
-  renderizarAlbumes(albumesActualizados[i]);
 }
