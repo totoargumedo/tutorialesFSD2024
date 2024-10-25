@@ -1,0 +1,49 @@
+#section-gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-album {
+  margin: 10px 0;
+  width: 700px;
+  height: 200px;
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 12px;
+  border-radius: 15px;
+}
+
+.gallery-album-imagen {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.gallery-album-body {
+  display: flex;
+}
+.gallery-album-body2 {
+  display: flex;
+  flex-direction: column;
+}
+.gallery-album-data {
+  display: flex;
+  p {
+    padding: 5px;
+    margin: 0 5px;
+    background-color: black;
+    color: white;
+  }
+}
+
+.gallery-album-price {
+  padding: 5px;
+  margin: 0 5px;
+  background-color: black;
+  color: white;
+  width: 50px;
+  text-align: center;
+}
