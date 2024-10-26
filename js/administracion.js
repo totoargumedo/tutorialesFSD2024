@@ -41,6 +41,10 @@ function renderizarFila(album) {
 }
 
 function renderizarTabla(baseDeDatos) {
+  //limpiar tabla
+  const tabla = document.querySelector("tbody");
+  tabla.innerHTML = "";
+  //cargar datos en tabla
   for (let i = 0; i < baseDeDatos.length; i++) {
     renderizarFila(baseDeDatos[i]);
   }
